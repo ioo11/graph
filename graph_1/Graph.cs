@@ -16,12 +16,14 @@ namespace graph_1
         public Graph(IncidentMatrix matrix)
         {
             incidentMatrix = matrix;
+            // todo: init adjacencyMatrix
         }
 
         // TODO : constructor by adjacency matrix
         public Graph(AdjacencyMatrix matrix)
         {
             adjacencyMatrix = matrix;
+            // todo: init incidenceMatrix
         }
 
         public bool isOrientedByAdjacencyMatrix()
@@ -105,12 +107,16 @@ namespace graph_1
         private bool _isIsolated;
         private bool _isLeaf;
 
+
+        //todo: construct(IncidentVertices): 
+
         public Vertex[] IncidentVertices
         {
             get
             {
                 return _incidentVertices;
             }
+            // TODO: private set
             set
             {
                 _incidentVertices = value;
